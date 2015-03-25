@@ -1,0 +1,51 @@
+/* menu */
+#menu {
+margin-top:50px;
+}
+
+nav
+{
+    display: inline-block;
+    width: 100%;
+    text-align: right;
+    
+}
+
+
+nav ul
+{
+    list-style-type: none;
+    text-align:center;
+    margin:0 auto;
+    
+}
+
+
+nav li
+{
+    display: inline-block;
+    margin-right: 15px;
+    
+}
+
+
+nav a
+{
+    font-size: 1.4em;
+	color: green;
+    padding-bottom: 3px;
+    text-decoration: none;
+    border: 3px solid green;
+    border-radius:15px;
+    box-shadow: 6px 6px 0px green;
+    
+}
+
+nav a:hover
+{
+    color: green;
+    border-bottom: 3px solid green;
+    opacity:0.5;
+   
+}
+

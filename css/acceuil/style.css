@@ -1,0 +1,167 @@
+/* styles principaux de la page(largeur du site, fond, couleur par défaut du texte)  */
+
+
+body
+{
+	background: url('fond.jpg');
+	font-family: Georgia ;
+	color: rgb(0,0,0);
+	background-attachment: fixed
+}
+
+#bloc_page
+{
+	width: 90%;
+	margin: auto;
+}
+
+, h2
+{
+    font-weight: normal;
+}
+
+/* header */
+
+header
+{
+	background: url('ban.png');
+	height: 155px;
+}
+
+
+
+
+h2
+{
+	display: inline-block;
+    width: 100%;
+    text-align: right;
+    list-style-type: none;
+    text-align:center;
+    margin:0 auto;
+    
+}
+
+
+
+/* menu */
+#menu {
+margin-top:50px;
+}
+
+nav
+{
+    display: inline-block;
+    width: 100%;
+    text-align: right;
+    
+}
+
+
+nav ul
+{
+    list-style-type: none;
+    text-align:center;
+    margin:0 auto;
+    
+}
+
+
+nav li
+{
+    display: inline-block;
+    margin-right: 15px;
+    
+}
+
+
+nav a
+{
+    font-size: 1.4em;
+	color: green;
+    padding-bottom: 3px;
+    text-decoration: none;
+    border: 3px solid green;
+    border-radius:15px;
+    box-shadow: 6px 6px 0px green;
+    
+}
+
+nav a:hover
+{
+    color: green;
+    border-bottom: 3px solid green;
+    opacity:0.5;
+   
+}
+
+
+/*section*/
+
+section
+{
+
+background-image: url('section.jpg');
+background-position: right;
+background-size:cover; 
+background-color: white;
+height: 900px;
+border: 5px solid green;
+margin-top:50px;
+}
+
+h1
+{
+color: green;
+opacity:0.5;
+}
+
+
+
+
+
+
+
+/* footer */
+
+footer ul
+{
+    font-size: 1em;
+    list-style-type: none;
+    position: relative;
+    bottom: -500px;    
+}
+
+footer li
+{
+	display: inline-block;
+	border: 3px solid green;
+    border-radius:15px;
+    
+}
+
+help li
+{
+    display: inline-block;
+    margin-right: 15px;
+    
+}
+
+help a
+{
+    font-size: 1.4em;
+	color: green;
+    padding-bottom: 3px;
+    text-decoration: none;
+    border: 3px solid green;
+    border-radius:15px;
+    box-shadow: 6px 6px 0px green;
+}
+
+help a:hover
+{
+    color: green;
+    border-bottom: 3px solid green;
+    opacity:0.5;
+   
+}
