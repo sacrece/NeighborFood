@@ -4,7 +4,7 @@
 
 body
 {
-	background: url('http://localhost/NeighborFood/view/image/fond.jpg');
+	background: url('fond.jpg');
 	font-family: Georgia ;
 	color: rgb(0,0,0);
 	background-attachment: fixed
@@ -25,7 +25,7 @@ body
 
 header
 {
-	background: url('http://localhost/NeighborFood/view/image/ban.png');
+	background: url('ban.png');
 	height: 155px;
 }
 
@@ -102,7 +102,7 @@ nav a:hover
 section
 {
 
-background-image: url('http://localhost/NeighborFood/view/image/section.jpg');
+background-image: url('section.jpg');
 background-position: right;
 background-size:cover; 
 background-color: white;

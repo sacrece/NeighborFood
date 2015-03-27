@@ -1,4 +1,18 @@
-
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="style.css" /> <!-- associe cette page au page css stylessheet-->
+        <title>NeihgborFood - ???????</title>
+    </head>
+		
+		
+    <body>
+        <div id="bloc_page">
+        	<header>
+        		
+        	</header>
+        	
         	
         	<div id="menu">
         		<nav>
@@ -6,7 +20,7 @@
         				<li><a href="#">Home</a></li>
         				<li><a href="#">Forum</a> </li>
         				<li><a href="#">Connexion</a> </li>
-        				<li><a href="http://localhost/NeighborFood/controler/inscription/c_inscription.php">Créer un compte</a> </li>
+        				<li><a href="#">Créer un compte</a> </li>
         				<li><a href="#">Acheter</a> </li>
         			</ul>
         		</nav>
@@ -33,7 +47,21 @@
         			</p>
         		</div>
         		
-        	</section>    	
+        	</section>
         	
         	
         	
+        	
+        	<footer>
+        		<div>
+        			<ul>
+        				<help>
+        				<li><a href="#">Aide en ligne</a></li>
+        				<li><a href="#">Contacter nous</a></li>
+        				</help>
+        			</ul>
+        		</div>
+        	</footer>	
+		</div>
+    </body>
+</html>
