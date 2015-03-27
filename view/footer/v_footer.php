@@ -1,4 +1,4 @@
-
+	</section>
     <footer>
         		<div>
         			<ul>

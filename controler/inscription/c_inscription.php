@@ -23,6 +23,11 @@ if(isset($_POST['valider'])){
 	
 }else{
 	require "../../view/header/v_header.php";
+	if(isset($_SESSION['connecte'])){		
+		require "../../view/menu/v_menuconnecte.php";
+	}else{
+		 require "../../view/menu/v_menunonconnecte.php";
+	}
 	require "../../view/inscription/v_formulaire.php";
 	require "../../view/footer/v_footer.php";
 }

@@ -1,24 +1,6 @@
-<?php
+
 	
-		session_start();
-	
-?>	
-<!DOCTYPE html>
-<html>
-	<head>
-        <meta charset="utf-8" />
-	<link rel="stylesheet" />
-        <title>VENTE</title>
-    </head>
-	
-	<body>
-	<?php 
-	if(isset($_SESSION['connecte'])){
-		require "require/connecte.php";
-	}else{require "require/non_connecte.php";}
-?>
-	
-	<form name="vente" method="post" action="http://localhost/test/php/vente_post.php">
+	<form name="vente" method="post" action="http://localhost/NeighborFood/controler/vente/c_vente.php">
 	<table>
 	
 		<tr><td><label for="quantity">Quantité</label> : <input type="number" name="quantite" id="quantity"/></tr></td>
@@ -50,5 +32,4 @@
 		<input type="reset" name="stop" value="Annuler" class="bouton"/>
 		<input type="submit" name="valider" value="Valider" class="bouton"/>
 	</form>
-	</body>
-</html>
+	
