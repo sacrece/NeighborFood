@@ -1,7 +1,7 @@
 <?php 
 
- $mdp=$_POST['mdp'];
- $mail=$_POST['mail'];
+ htmlentities($mdp=$_POST['mdp']);
+ htmlentities($mail=$_POST['mail']);
  require "../../modele/connexion/m_connexion.php";
  
  if(password_verify($mdp, get_password($mail))){

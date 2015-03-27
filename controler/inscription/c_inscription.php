@@ -2,12 +2,12 @@
 
 if(isset($_POST['valider'])){
 	
-	$nom = $_POST['nom'];
-	$prenom = $_POST['prenom'];
-	$mail = $_POST['mail'];
-	$telephone = $_POST['telephone'];
-	$adresse = $_POST['adresse'];
-	$mdp = $_POST['mdp'];
+	htmlentities($nom = $_POST['nom']);
+	htmlentities($prenom = $_POST['prenom']);
+	htmlentities($mail = $_POST['mail']);
+	htmlentities($telephone = $_POST['telephone']);
+	htmlentities($adresse = $_POST['adresse']);
+	htmlentities($mdp = $_POST['mdp']);
 	require_once "../../modele/inscription/m_formulaire_post.php";
 	if(filter_var($mail, FILTER_VALIDATE_EMAIL)){
 		if(empty(test_mail($mail))){

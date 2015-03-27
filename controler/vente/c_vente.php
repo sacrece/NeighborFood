@@ -3,13 +3,13 @@
 session_start();
 
 if(isset($_POST['valider'])){
-	$quantite = $_POST['quantite'];
-	$poids = $_POST['poids'];
-	$description = $_POST['description'];
-	$prix = $_POST['prix'];
-	$buyorchange = $_POST['buyorchange'];
+	htmlentities($quantite = $_POST['quantite']);
+	htmlentities($poids = $_POST['poids']);
+	htmlentities($description = $_POST['description']);
+	htmlentities($prix = $_POST['prix']);
+	htmlentities($buyorchange = $_POST['buyorchange']);
 	$mail = $_SESSION['mail'];
-	$idcategorie = $_POST['categorie'];
+	htmlentities($idcategorie = $_POST['categorie']);
 	$date = date("Y-m-d H:m:s");
 	
 	require "../../modele/vente/m_vente.php";
