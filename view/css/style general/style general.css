@@ -1,0 +1,17 @@
+/* styles principaux de la page(largeur du site, fond, couleur par défaut du texte)  */
+
+
+body
+{
+	background: url('fond.jpg');
+	font-family: Georgia ;
+	color: rgb(0,0,0);
+	background-attachment: fixed
+}
+
+#bloc_page
+{
+	width: 90%;
+	margin: auto;
+}
+
