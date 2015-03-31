@@ -8,7 +8,7 @@
 
 	
 		<section>
-		<form name="formulaire" method="post" action="http://localhost/NeighborFood/controler/inscription/c_inscription.php">
+		<form name="formulaire" method="post" action="/NeighborFood/controler/inscription/c_inscription.php">
 		
 		<table>		
 			<tr><td><label for="nom">Nom</label> : <input type="text" name="nom" id="nom" placeholder="Nom"/></tr></td>

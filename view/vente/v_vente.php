@@ -1,6 +1,6 @@
 
 	
-	<form name="vente" method="post" action="http://localhost/NeighborFood/controler/vente/c_vente.php">
+	<form name="vente" method="post" action="/NeighborFood/controler/vente/c_vente.php">
 	<table>
 	
 		<tr><td><label for="quantity">Quantité</label> : <input type="number" name="quantite" id="quantity"/></tr></td>

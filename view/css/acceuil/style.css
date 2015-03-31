@@ -27,6 +27,7 @@ header
 {
 	background: url('http://localhost/NeighborFood/view/image/ban.png');
 	height: 155px;
+	border-radius: 8px; 
 }
 
 
@@ -109,6 +110,7 @@ background-color: white;
 height: 900px;
 border: 5px solid green;
 margin-top:50px;
+border-radius: 8px;
 }
 
 h1
