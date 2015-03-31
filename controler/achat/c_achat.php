@@ -1,8 +1,16 @@
  <?php
- 
-	require_once "../../view/header/v_header.php";
+	session_start();
 	
+	require_once "../../view/header/v_header.php";
+	if(isset($_SESSION['connecte'])){		
+		require "../../view/menu/v_menuconnecte.php";
+		require "../connexion/c_connecte.php";
+	}else{
+		 require "../../view/menu/v_menunonconnecte.php";
+		 require "../connexion/c_non_connecte.php";
+	}
 	require_once "../../modele/achat/m_achat.php";
+	
 	$func = get_fruit();
 	while($donnees = $func->fetch()){
 	
