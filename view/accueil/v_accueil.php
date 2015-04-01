@@ -1,7 +1,5 @@
 
 
-        	
-        	<section>
         		
         		<div id="presentation">
         			<h2> Bienvenue sur NeighborFood </h2>
@@ -20,8 +18,7 @@
         			a la vie du site 
         			</p>
         		</div>
-        		
-        	</section>    	
+        	
         	
         	
         	

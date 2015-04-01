@@ -11,7 +11,7 @@
 		
 
 	
-		<section>		
+				
 		<form name="formulaire" method="post" action="/NeighborFood/controler/inscription/c_inscription.php">
 		
 		<table>		
