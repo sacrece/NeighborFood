@@ -1,5 +1,9 @@
-
-
+       
+	<head>
+	   
+        <link rel="stylesheet" href="/NeighborFood/view/css/inscription/inscription.css" /> <!-- associe cette page au page css stylessheet-->
+        
+    </head>
 		<h2>INSCRIPTION</h2>
 <aside class="profil">
 
@@ -7,7 +11,7 @@
 		
 
 	
-		<section>
+		<section>		
 		<form name="formulaire" method="post" action="/NeighborFood/controler/inscription/c_inscription.php">
 		
 		<table>		
