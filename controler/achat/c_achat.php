@@ -1,5 +1,6 @@
  <?php
-	session_start();
+	session_start();	
+	
 	
 	require_once "../../view/header/v_header.php";
 	if(isset($_SESSION['connecte'])){		
@@ -9,20 +10,37 @@
 		 require "../../view/menu/v_menunonconnecte.php";
 		 require "../connexion/c_non_connecte.php";
 	}
+	require_once "../../view/achat/v_achat.php";
 	require_once "../../modele/achat/m_achat.php";
+	if (isset($_POST['valider'])){
+		htmlentities($idcateg = $_POST['categorie']);
+		$func = get_fruit_categorie($idcateg);
+		
+		while($donnees = $func->fetch()){
 	
-	$func = get_fruit();
-	while($donnees = $func->fetch()){
+			$quantite = $donnees['quantity'];
+			$weight = $donnees['weight'];
+			$description = $donnees['description'];
+			$price = $donnees['price'];
+			$name = $donnees['name'];
+			$first_name = $donnees['first_name'];
+			$categories = $donnees['categories'];
+			require "../../view/achat/v_achat_gabarit.php";	
+		}
+	}else{	
+		$func = get_fruit();
+		while($donnees = $func->fetch()){
 	
-		$quantite = $donnees['quantity'];
-		$weight = $donnees['weight'];
-		$description = $donnees['description'];
-		$price = $donnees['price'];
-		$name = $donnees['name'];
-		$first_name = $donnees['first_name'];
-		$categories = $donnees['categories'];
-		require "../../view/achat/v_achat_gabarit.php";
+			$quantite = $donnees['quantity'];
+			$weight = $donnees['weight'];
+			$description = $donnees['description'];
+			$price = $donnees['price'];
+			$name = $donnees['name'];
+			$first_name = $donnees['first_name'];
+			$categories = $donnees['categories'];
+			require "../../view/achat/v_achat_gabarit.php";
 	
+		}
 	}
 	require_once "../../view/footer/v_footer.php";
 	

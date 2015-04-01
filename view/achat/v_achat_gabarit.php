@@ -7,6 +7,6 @@
 	<?= $price ?><br/>
 	<?= $name ?><br/>
 	<?= $first_name ?><br/>
-	<?= $categories ?><br/>
+	<?= $categories ?><br/><br/><br/>
 	
 </div>
