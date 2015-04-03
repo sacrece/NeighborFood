@@ -1,12 +1,12 @@
 <div id="2" >
 
 
-	<?= $quantite ?><br/>
-	<?= $weight ?><br/>
-	<?= $description ?><br/>
-	<?= $price ?><br/>
-	<?= $name ?><br/>
-	<?= $first_name ?><br/>
-	<?= $categories ?><br/><br/><br/>
+	quantité = <?= $quantite ?><br/>
+	poids = <?= $weight ?> kg<br/>
+	description : <?= $description ?><br/>
+	Pirx = <?= $price ?> euros<br/>
+	Nom du vendeur : <?= $name ?><br/>
+	Prénom du vendeur <?= $first_name ?><br/>
+	catégorie : <?= $categories ?><br/><br/><br/>
 	
 </div>
