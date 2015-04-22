@@ -31,7 +31,6 @@ function get_fruit_categorie($idcateg){
 											fruitveg.price, 
 											fruitveg.member_idmembre,
 											fruitveg.idcategorie,
-											fruitveg.photo,
 											member.name,
 											member.first_name,
 											fruitvegcategory.categories

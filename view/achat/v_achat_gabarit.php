@@ -7,7 +7,6 @@
 	Pirx = <?= $price ?> euros<br/>
 	Nom du vendeur : <?= $name ?><br/>
 	Prénom du vendeur <?= $first_name ?><br/>
-    <?= $photo ?><br/>
 	catégorie : <?= $categories ?><br/><br/><br/>
 	
 </div>
