@@ -13,7 +13,7 @@ function get_fruit(){
 											fruitvegcategory.categories
 							FROM fruitveg INNER JOIN member ON fruitveg.member_idmembre = member.idmembre 
 											INNER JOIN fruitvegcategory ON fruitveg.idcategorie = fruitvegcategory.idfruitvegcategorie
-							ORDER BY idfruit DESC LIMIT 0,4
+							ORDER BY idfruit DESC LIMIT 0,3
 							')
 	or die(print_r($bdd->errorInfo()));
 																
