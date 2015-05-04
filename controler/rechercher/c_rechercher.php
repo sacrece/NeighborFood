@@ -11,7 +11,7 @@
             require "../../view/menu/v_menunonconnecte.php";
             require "../connexion/c_non_connecte.php";
         }?>
-        <form name="rechercher" method="post" action="http://localhost/NeighborFood/controler/rechercher/c_rechercher.php">
+        <form name="rechercher" id="rechercher" method="post" action="http://localhost/NeighborFood/controler/rechercher/c_rechercher.php">
 			<table>
 				<tr><td><label for="recherche">Recherche</label> : <input type="text" name="recherche" id="recherche" /></tr></td>
 			</table>
@@ -23,12 +23,12 @@
         $recherche = recherche($_POST['recherche']);
 
         while($info = $recherche->fetch()) {
-            echo $info['name'] . '<br/>' . $info['first_name'] .'<br>'.$info['email']. '<br/><br/><br/>';
+            echo '<div id="membre"> '.$info['name'] . '<br/>' . $info['first_name'] .'<br>'.$info['email']. '</div>';
         }
         require_once "../../view/footer/v_footer.php";
     }else{
 ?>
-        <form name="rechercher" method="post" action="http://localhost/NeighborFood/controler/rechercher/c_rechercher.php">
+        <form name="rechercher" id="rechercher" method="post" action="http://localhost/NeighborFood/controler/rechercher/c_rechercher.php">
 			<table>
 				<tr><td><label for="recherche">Recherche</label> : <input type="text" name="recherche" id="recherche" /></tr></td>
 			</table>

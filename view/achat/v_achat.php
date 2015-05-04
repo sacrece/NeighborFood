@@ -3,11 +3,11 @@
     <link rel="stylesheet" href="/NeighborFood/view/css/achat/achat.css" /> <!-- associe cette page au page css stylessheet-->
 
 </head>
-<form name="achat" method="post" action="/NeighborFood/controler/achat/c_achat.php">
+<form name="achat" id="achat" method="post" action="/NeighborFood/controler/achat/c_achat.php">
 	<table>
 	
-<tr><td><label for="categorie">Choisissez votre catégorie</label><br />
-<select name="categorie" id="categorie">
+    <tr><td><label for="categorie">Choisissez votre catégorie</label><br />
+        <select name="categorie" id="categorie">
 		<?php
 			$bdd = new PDO('mysql:host=localhost;dbname=site internet;charset=utf8', 'root', '');
 			$reponse = $bdd->query('SELECT categories, idfruitvegcategorie FROM fruitvegcategory');			
@@ -24,4 +24,4 @@
 		
 	</table>
 	<input type="submit" name="valider" value="Valider" class="bouton"/>
-	</form>
+</form>

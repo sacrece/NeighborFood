@@ -4,7 +4,6 @@
 	require_once "../../view/header/v_header.php";
 	require "../../view/menu/v_menuconnecte.php";
 	require "../connexion/c_connecte.php";
-	require_once"../../modele/bdd/m_bdd.php";
 	require_once"../../modele/monCompte/m_monCompte.php";
 	$mail = $_SESSION['mail'];
 	$info = get_info($mail);

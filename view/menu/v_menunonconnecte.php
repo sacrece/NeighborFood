@@ -1,4 +1,8 @@
+<head>
 
+    <link rel="stylesheet" href="/NeighborFood/view/css/menu/menu.css" />
+
+</head>
 			<div id="menu">
         		<nav>
         			<ul>

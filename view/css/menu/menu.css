@@ -14,9 +14,12 @@ nav
 
 nav ul
 {
-    list-style-type: none;
-    text-align:center;
-    margin:0 auto;
+    t-style-type: none;
+    font-size: medium;
+    padding: 0;
+    font-family: Maiandra GD;
+    text-align: center;
+    margin-top: 0px;
     
 }
 
@@ -25,20 +28,27 @@ nav li
 {
     display: inline-block;
     margin-right: 15px;
-    
+    padding-left: 50px;
+    padding-right: 50px;
+
+
+}
+nav li:hover
+{
+    text-shadow: 0px 0px 5px white;
 }
 
 
 nav a
 {
     font-size: 1.4em;
-	color: green;
+	color: white;
     padding-bottom: 3px;
     text-decoration: none;
     border: 3px solid green;
     border-radius:15px;
     box-shadow: 6px 6px 0px green;
-    
+    margin-top: 35px;
 }
 
 nav a:hover
@@ -48,4 +58,5 @@ nav a:hover
     opacity:0.5;
    
 }
+
 
