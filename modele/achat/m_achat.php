@@ -10,8 +10,9 @@ function get_fruit(){
 											fruitveg.idcategorie,
 											member.name,
 											member.first_name,
-											fruitvegcategory.categories
-							FROM fruitveg INNER JOIN member ON fruitveg.member_idmembre = member.idmembre 
+											fruitvegcategory.categories,
+											fruitvegcategory.photo
+							FROM fruitveg INNER JOIN member ON fruitveg.member_idmembre = member.idmembre
 											INNER JOIN fruitvegcategory ON fruitveg.idcategorie = fruitvegcategory.idfruitvegcategorie
 							ORDER BY idfruit DESC LIMIT 0,3
 							')
@@ -31,10 +32,10 @@ function get_fruit_categorie($idcateg){
 											fruitveg.price, 
 											fruitveg.member_idmembre,
 											fruitveg.idcategorie,
-											fruitveg.photo,
 											member.name,
 											member.first_name,
-											fruitvegcategory.categories
+											fruitvegcategory.categories,
+											fruitvegcategory.photo
 							FROM fruitveg INNER JOIN member ON fruitveg.member_idmembre = member.idmembre 
 											INNER JOIN fruitvegcategory ON fruitveg.idcategorie = fruitvegcategory.idfruitvegcategorie
 							WHERE fruitvegcategory.idfruitvegcategorie = "'.$idcateg.'"

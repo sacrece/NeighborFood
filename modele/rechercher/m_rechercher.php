@@ -7,6 +7,7 @@ function recherche($recherche){
                                     email
                                 FROM member
                                 WHERE name LIKE "%'.$recherche.'%" OR first_name LIKE "%'.$recherche.'%"
+                                LIMIT 0,4
                                 ');
     return $reponse;
 

@@ -1,7 +1,7 @@
 <?php 
 function get_info($mail){
 	$bdd = new PDO('mysql:host=localhost;dbname=site internet;charset=utf8', 'root', '');
-	$reponse = $bdd->prepare('SELECT name, first_name, email, phone, adresse
+	$reponse = $bdd->prepare('SELECT name, first_name, email, phone, adresse, password
 								FROM member
 								WHERE email = ?')or die(print_r($bdd->errorInfo()));
 	$reponse->execute(array($mail));

@@ -39,6 +39,7 @@
 			$name = $donnees['name'];
 			$first_name = $donnees['first_name'];
 			$categories = $donnees['categories'];
+            $photo = $donnees['photo'];
 			require "../../view/achat/v_achat_gabarit.php";
 	
 		}

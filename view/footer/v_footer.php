@@ -1,5 +1,5 @@
-	</section>
-    <footer>
+
+            <footer>
         		<div>
         			<ul>
         				<help>
@@ -9,7 +9,7 @@
         			</ul>
         		</div>
 
-        	</footer>	
-    
+        	</footer>
+         </section>
     </body>
-	</html>
+</html>
