@@ -4,7 +4,7 @@
     width: 95%;
     border: 2px solid black;
     margin : 2% 2% 2% 2%;
-    height : 20%;
+    height : 160px;
 
 
 }
@@ -15,6 +15,15 @@
     text-align: left;
 }
 
+
+#description
+{
+    position : absolute;
+    top: 3%;
+    right : 5%;
+    width : 30%;
+
+}
 
 #image{
     position : absolute;

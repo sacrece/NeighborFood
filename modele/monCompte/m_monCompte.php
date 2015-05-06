@@ -10,16 +10,20 @@ function get_info($mail){
 }
 
 
-function update($nom, $prenom, $mail, $telephone, $adresse, $password, $ancmail){
+function update($nom, $prenom, $mail, $telephone, $adresse, $ancmail){
 	$bdd = new PDO('mysql:host=localhost;dbname=site internet;charset=utf8', 'root', '');
 
 	$bdd->exec("UPDATE member SET name='".$nom."',
 								  first_name='".$prenom."',
 								  email='".$mail."',
 								  phone='".$telephone."',
-								  adresse='".$adresse."',
-								  password='".$password."'
+								  adresse='".$adresse."'
 							  WHERE email = '".$ancmail."'")or die(print_r($bdd->errorInfo()));
 }
 
+function update_mdp($password, $mail){
+    $bdd = new PDO('mysql:host=localhost;dbname=site internet;charset=utf8', 'root', '');
+    $bdd->exec("UPDATE member SET password='".$password."'
+                                WHERE email='".$mail."'");
+}
 ?>

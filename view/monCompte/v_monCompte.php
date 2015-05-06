@@ -9,6 +9,7 @@
 	
 	<form name="bouton" method="post" action="/NeighborFood/controler/monCompte/c_monCompte.php">
 		<input type="submit" name="modifier" value="Modifier mes informations" class="bouton">
+        <input type="submit" name="modifier_mdp" value="Modifier mon mot de passe" class="bouton">
 	</form>
 	
 </div>

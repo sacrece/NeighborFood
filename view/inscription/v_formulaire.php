@@ -12,15 +12,16 @@
 
 	
 				
-		<form name="formulaire" method="post" action="/NeighborFood/controler/inscription/c_inscription.php">
+		<form name="formulaire"  method="post" action="/NeighborFood/controler/inscription/c_inscription.php">
 		
-		<table>		
+		<table  id ="formulaire" >
 			<tr><td><label for="nom">Nom</label> : <input type="text" name="nom" id="nom" placeholder="Nom"/></tr></td>
 			<tr><td><label for="prenom">Prénom</label> : <input type="text" name="prenom" id="prenom" placeholder="Prénom"/></tr></td>
 			<tr><td><label for="mail">Adresse mail</label> : <input type="mail" name="mail" id="mail" placeholder="adresse@email.com"/></tr></td>
 			<tr><td><label for="adresse">Telephone</label> : <input type="text" name="telephone" id="adresse" placeholder="07 77 77 77 77"/></tr></td>
 			<tr><td><label for="postal">Adresse</label> : <input type="tel" name="adresse" id="postal" placeholder="35 rue du chateau 53600 trou-ville"/></tr></td>
 			<tr><td><label for="mdp">Mot de passe</label> : <input type="password" name="mdp" id="mdp" placeholder="MotDePasse"/></tr></td>
+            <tr><td><label for="conf_mdp">Confirmer mot de passe</label> : <input type="password" name="conf_mdp" id="mdp" placeholder="ConfirmerMotDePasse"/></tr></td>
 			
 		</table>
 			<input type="reset" name="stop" value="Annuler" class="bouton"/>

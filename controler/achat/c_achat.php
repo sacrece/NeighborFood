@@ -46,4 +46,4 @@
 	}
 	require_once "../../view/footer/v_footer.php";
 	
-?>;
+?>

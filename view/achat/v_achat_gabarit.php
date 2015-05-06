@@ -3,11 +3,13 @@
 
 	    quantité = <?= $quantite ?><br/>
 	    poids = <?= $weight ?> kg<br/>
-	    description : <?= $description ?><br/>
+	   <div id="description">
+	     description : <?= $description ?><br/>
+       </div>
 	    Prix = <?= $price ?> euros<br/>
         Vendeur : <?=$first_name?> <?= $name?><br/>
         catégorie : <?= $categories ?><br/>
 <div id="image">
-    <img src="<?= $photo ?>" alt="arobas" style="width:250px;" />
+    <img src="<?= $photo ?>" alt="arobas" style="width:230px;" />
 </div>
 </div>
