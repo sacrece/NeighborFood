@@ -8,12 +8,15 @@ function get_fruit(){
 											fruitveg.price, 
 											fruitveg.member_idmembre,
 											fruitveg.idcategorie,
+											fruitveg.idfruit,
 											member.name,
 											member.first_name,
 											fruitvegcategory.categories,
-											fruitvegcategory.photo
+											fruitvegcategory.photo,
+											fruitvegcategory.idfruitvegcategorie
 							FROM fruitveg INNER JOIN member ON fruitveg.member_idmembre = member.idmembre
 											INNER JOIN fruitvegcategory ON fruitveg.idcategorie = fruitvegcategory.idfruitvegcategorie
+                            WHERE fruitveg.sale_nosale = "1"
 							ORDER BY idfruit DESC LIMIT 0,3
 							')
 	or die(print_r($bdd->errorInfo()));
@@ -32,10 +35,12 @@ function get_fruit_categorie($idcateg){
 											fruitveg.price, 
 											fruitveg.member_idmembre,
 											fruitveg.idcategorie,
+											fruitveg.idfruit,
 											member.name,
 											member.first_name,
 											fruitvegcategory.categories,
-											fruitvegcategory.photo
+											fruitvegcategory.photo,
+											fruitvegcategory.idfruitvegcategorie
 							FROM fruitveg INNER JOIN member ON fruitveg.member_idmembre = member.idmembre 
 											INNER JOIN fruitvegcategory ON fruitveg.idcategorie = fruitvegcategory.idfruitvegcategorie
 							WHERE fruitvegcategory.idfruitvegcategorie = "'.$idcateg.'"
@@ -45,6 +50,20 @@ function get_fruit_categorie($idcateg){
 																
 	return $reponse;
 	
+
+}
+
+function insert_panier($idfruit, $idmembre, $idcategorie, $date){
+    $bdd = new PDO('mysql:host=localhost;dbname=site internet;charset=utf8', 'root', '');
+    $bdd->exec("INSERT into panier VALUES('',
+                                          '$date',
+                                          '$idmembre',
+                                          '$idfruit',
+                                          '',
+                                          '$idcategorie')")or die(print_r($bdd->errorInfo()));
+    $bdd->exec("UPDATE fruitveg
+                SET sale_nosale = '0'
+                WHERE idfruit='".$idfruit."'")or die(print_r($bdd->errorInfo()));
 
 }
 

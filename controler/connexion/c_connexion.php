@@ -11,6 +11,7 @@
 		$_SESSION['prenom']=$name['first_name'];
 		$_SESSION['mail']=$mail;
 		$_SESSION['mdp']=$mdp;
+        $_SESSION['idmembre']=$name['idmembre'];
 		$_SESSION['connecte']=True;
 	header('Location: http://localhost/NeighborFood/controler/accueil/c_accueil.php');
  }else{ header('Location: http://localhost/NeighborFood/controler/accueil/c_accueil.php');}

@@ -17,7 +17,7 @@
 
 		 require "../connexion/c_non_connecte.php";
         require "../../view/footer/v_footer.php";
-	}
+        	}
 
 	
 	
