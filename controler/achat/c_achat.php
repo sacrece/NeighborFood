@@ -1,7 +1,7 @@
  <?php
 	session_start();	
 	
-	
+	$parPage = 3;
 	require_once "../../view/header/v_header.php";
 	if(isset($_SESSION['connecte'])){		
 		require "../../view/menu/v_menuconnecte.php";
@@ -12,9 +12,16 @@
 	}
 	require_once "../../view/achat/v_achat.php";
 	require_once "../../modele/achat/m_achat.php";
-	if (isset($_POST['valider'])){
-		htmlentities($idcateg = $_POST['categorie']);
-		$func = get_fruit_categorie($idcateg);
+	if (isset($_GET['valider'])){
+		htmlentities($idcateg = $_GET['categorie']);
+        $nbrFruitCategorie = nbrFruitCategorie($idcateg);
+        $nbrPageCategorie = ceil($nbrFruitCategorie/$parPage);
+        if(isset($_GET['p']) && $_GET['p']>0 && $_GET['p']<=$nbrPageCategorie){
+            $pageCourranteCategorie = $_GET['p'];
+        }else{
+            $pageCourranteCategorie = 1;
+        }
+		$func = get_fruit_categorie(($pageCourranteCategorie-1)*$parPage, $parPage, $idcateg);
 		$n=1;
 		while($donnees = $func->fetch()){
 
@@ -31,8 +38,25 @@
 			require "../../view/achat/v_achat_gabarit.php";
             $n=$n+1;
 		}
-	}else{	
-		$func = get_fruit();
+        for($i=1; $i<=$nbrPageCategorie; $i++){
+            if($i==$pageCourranteCategorie){
+                echo $i.'/ ';
+            }else {
+                echo "<a href='/NeighborFood/controler/achat/c_achat.php?p=$i&categorie=$idcateg&valider=Valider'>$i</a>/ ";
+            }
+        }
+	}else{
+
+        $nbrFruit = nbrFruit();
+
+        $nbrPage = ceil($nbrFruit/$parPage);
+        if(isset($_GET['p']) && $_GET['p']>0 && $_GET['p']<=$nbrPage){
+            $pageCourrante = $_GET['p'];
+        }else{
+            $pageCourrante = 1;
+        }
+
+		$func = get_fruit(($pageCourrante-1)*$parPage, $parPage);
         $n=1;
 		while($donnees = $func->fetch()){
 	
@@ -50,6 +74,14 @@
             $n=$n+1;
 	
 		}
+
+        for($i=1; $i<=$nbrPage; $i++){
+            if($i==$pageCourrante){
+                echo $i.'/ ';
+            }else {
+                echo "<a href='/NeighborFood/controler/achat/c_achat.php?p=$i'>$i</a>/ ";
+            }
+        }
 	}
 
     if(isset($_POST['1'])){

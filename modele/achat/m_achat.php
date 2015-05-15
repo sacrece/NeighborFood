@@ -1,6 +1,6 @@
 <?php 
 
-function get_fruit(){
+function get_fruit($premier, $parPage){
 	$bdd = new PDO('mysql:host=localhost;dbname=site internet;charset=utf8', 'root', '');
 	$reponse = $bdd->query('SELECT DISTINCT fruitveg.quantity, 
 											fruitveg.weight,
@@ -17,7 +17,7 @@ function get_fruit(){
 							FROM fruitveg INNER JOIN member ON fruitveg.member_idmembre = member.idmembre
 											INNER JOIN fruitvegcategory ON fruitveg.idcategorie = fruitvegcategory.idfruitvegcategorie
                             WHERE fruitveg.sale_nosale = "1"
-							ORDER BY idfruit DESC LIMIT 0,3
+							ORDER BY idfruit DESC LIMIT '.$premier.','.$parPage.'
 							')
 	or die(print_r($bdd->errorInfo()));
 																
@@ -26,8 +26,15 @@ function get_fruit(){
 
 }
 
+function nbrFruit(){
+    $bdd = new PDO('mysql:host=localhost;dbname=site internet;charset=utf8', 'root', '');
+    $reponse = $bdd->query('SELECT COUNT(idfruit) as nbrFruit FROM fruitveg WHERE fruitveg.sale_nosale = "1"');
+    $nbrFruit = $reponse->fetch();
+    return $nbrFruit['nbrFruit'];
+}
 
-function get_fruit_categorie($idcateg){
+
+function get_fruit_categorie($premier, $parPage, $idcateg){
 	$bdd = new PDO('mysql:host=localhost;dbname=site internet;charset=utf8', 'root', '');
 	$reponse = $bdd->query('SELECT DISTINCT fruitveg.quantity, 
 											fruitveg.weight,
@@ -44,7 +51,7 @@ function get_fruit_categorie($idcateg){
 							FROM fruitveg INNER JOIN member ON fruitveg.member_idmembre = member.idmembre 
 											INNER JOIN fruitvegcategory ON fruitveg.idcategorie = fruitvegcategory.idfruitvegcategorie
 							WHERE fruitvegcategory.idfruitvegcategorie = "'.$idcateg.'"
-							ORDER BY idfruit DESC LIMIT 0,4
+							ORDER BY idfruit DESC LIMIT '.$premier.','.$parPage.'
 							')
 	or die(print_r($bdd->errorInfo()));
 																
@@ -52,6 +59,16 @@ function get_fruit_categorie($idcateg){
 	
 
 }
+
+function nbrFruitCategorie($idcateg){
+    $bdd = new PDO('mysql:host=localhost;dbname=site internet;charset=utf8', 'root', '');
+    $reponse = $bdd->query('SELECT COUNT(idfruit) as nbrFruit
+                                              FROM fruitveg INNER JOIN fruitvegcategory ON fruitveg.idcategorie = fruitvegcategory.idfruitvegcategorie
+                                              WHERE fruitveg.sale_nosale = "1" AND fruitvegcategory.idfruitvegcategorie = "'.$idcateg.'" ');
+    $nbrFruit = $reponse->fetch();
+    return $nbrFruit['nbrFruit'];
+}
+
 
 function insert_panier($idfruit, $idmembre, $idcategorie, $date){
     $bdd = new PDO('mysql:host=localhost;dbname=site internet;charset=utf8', 'root', '');

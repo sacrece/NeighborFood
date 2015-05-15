@@ -3,7 +3,7 @@
     <link rel="stylesheet" href="/NeighborFood/view/css/achat/achat.css" /> <!-- associe cette page au page css stylessheet-->
 
 </head>
-<form name="achat" id="achat" method="post" action="/NeighborFood/controler/achat/c_achat.php">
+<form name="achat" id="achat" method="get" action="/NeighborFood/controler/achat/c_achat.php">
 	<table>
 	
     <tr><td><label for="categorie">Choisissez votre catégorie</label><br />
