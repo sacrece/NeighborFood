@@ -7,6 +7,7 @@ function get_password($mail){
 	$reponse->execute(array($mail));
 	$password = $reponse->fetch();
 	return $password['password'];
+
 }
 	
 function get_namefirstname($mail){
