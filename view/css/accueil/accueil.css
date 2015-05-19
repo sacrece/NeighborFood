@@ -5,7 +5,7 @@ body
 {
     background: url("/NeighborFood/view/image/Fondbois2.jpg");
     font-family: Courier;
-    color: #5c5b5b;
+    color: black;
 
 
 }
@@ -152,6 +152,10 @@ help a:hover
 #rechercher
 {
     text-align: left;
+    width : 2.5%;
+    height : 2.5%;
+    position : relative;
+    right : 45%;
 }
 
 #membre
@@ -168,5 +172,13 @@ help a:hover
     margin-bottom: 2%;
     margin-top: 5%;
     width: 20%; /* largeur obligatoire pour être centré */
+
+}
+
+#bouton_recherche{
+    width : 2.5%;
+    height : 2.5%;
+    position : relative;
+    right : 46%;
 
 }

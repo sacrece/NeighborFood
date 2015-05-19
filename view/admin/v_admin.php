@@ -1,3 +1,8 @@
+<head>
+
+    <link rel="stylesheet" href="/NeighborFood/view/css/admin/admin.css" />
+
+</head>
 <div class = " page_header">
     Editer un article
 
@@ -6,24 +11,16 @@
      <thead>
          <tr>
              <th>
-                 ID
+                NOM
              </th>
              <th>
-                 Nom
+                 Prénom
              </th>
              <th>
                  Mail
              </th>
+             <th>
+                 ID
+             </th>
          </tr>
-     </thead>
-     <tbody>
 
-
-
-
-
-     </tbody>
-
-     </thead>
-
- </table>

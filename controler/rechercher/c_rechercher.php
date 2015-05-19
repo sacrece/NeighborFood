@@ -11,12 +11,14 @@
             require "../../view/menu/v_menunonconnecte.php";
             require "../connexion/c_non_connecte.php";
         }?>
+
         <form name="rechercher" id="rechercher" method="post" action="http://localhost/NeighborFood/controler/rechercher/c_rechercher.php">
 			<table>
 				<tr><td><label for="recherche">Recherche</label> : <input type="text" name="recherche" id="recherche" /></tr></td>
 			</table>
 				<input type="submit" name="valider_recherche" value="Rechercher" class="bouton"/>
 		</form>
+
         <?php
 
         require_once "../../modele/rechercher/m_rechercher.php";
@@ -28,11 +30,15 @@
         require_once "../../view/footer/v_footer.php";
     }else{
 ?>
-        <form name="rechercher" id="rechercher" method="post" action="http://localhost/NeighborFood/controler/rechercher/c_rechercher.php">
+
+        <img src="/NeighborFood/view/image/rechercher.png" onmouseover='montrer()' id="bouton_recherche"/>
+        <form name="rechercher" id="rechercher" method="post"  action="http://localhost/NeighborFood/controler/rechercher/c_rechercher.php">
 			<table>
-				<tr><td><label for="recherche">Recherche</label> : <input type="text" name="recherche" id="recherche" /></tr></td>
+				<tr><td><label for="recherche">Recherche</label> : <input type="text" name="recherche" id="recherche"  /></tr></td>
 			</table>
 				<input type="submit" name="valider_recherche" value="Rechercher" class="bouton"/>
 		</form>
+
+        <script src="/NeighborFood/js/j_rechercher.js"></script>
 <?php }
 ?>
