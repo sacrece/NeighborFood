@@ -86,35 +86,47 @@
 
     if(isset($_POST['1'])){
         $date = date("Y-m-d H:m:s");
+
         $idfruit = $GLOBALS['1'.$pageCourrante.'1'];
         $idcategorie = $GLOBALS['1'.$pageCourrante.'2'];
         $idmembre=$_SESSION['idmembre'];
         insert_panier($idfruit, $idmembre, $idcategorie, $date);
+
         $delai=1;
-        $url="/NeighborFood/controler/achat/c_achat.php";
+        $url="/NeighborFood/controler/achat/c_achat.php?p=$pageCourrante";
         header("Refresh: $delai;url=$url");
+        
 
     }
      if(isset($_POST['2'])){
+
          $date = date("Y-m-d H:m:s");
          $idfruit = $GLOBALS['2'.$pageCourrante.'1'];
          $idcategorie = $GLOBALS['2'.$pageCourrante.'2'];
          $idmembre=$_SESSION['idmembre'];
          insert_panier($idfruit, $idmembre, $idcategorie, $date);
+
          $delai=1;
-         $url="/NeighborFood/controler/achat/c_achat.php";
+         $url="/NeighborFood/controler/achat/c_achat.php?p=$pageCourrante";
          header("Refresh: $delai;url=$url");
+
+
     }
     if(isset($_POST['3'])){
         $date = date("Y-m-d H:m:s");
+
         $idfruit = $GLOBALS['3'.$pageCourrante.'1'];
         $idcategorie = $GLOBALS['3'.$pageCourrante.'2'];
         $idmembre=$_SESSION['idmembre'];
         insert_panier($idfruit, $idmembre, $idcategorie, $date);
+
         $delai=1;
-        $url="/NeighborFood/controler/achat/c_achat.php";
+        $url="/NeighborFood/controler/achat/c_achat.php?p=$pageCourrante";
         header("Refresh: $delai;url=$url");
+
+
      }
+
 	require_once "../../view/footer/v_footer.php";
 	
 ?>
