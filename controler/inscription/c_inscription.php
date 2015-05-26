@@ -13,16 +13,16 @@ if(isset($_POST['valider'])){
 	if(filter_var($mail, FILTER_VALIDATE_EMAIL)){
 		if(empty(test_mail($mail))){
 			if(empty($nom) || empty($prenom) || empty($mail) || empty($telephone) || empty($adresse) || empty($mdp) || empty($conf_mdp)){
-		header('Location: http://localhost/NeighborFood/controler/inscription/c_inscription.php');
+		header('Location: /NeighborFood/controler/inscription/c_inscription.php');
 			}else{
                 if($mdp == $conf_mdp) {
                     $password = password_hash($mdp, PASSWORD_DEFAULT);
                     insert($nom, $prenom, $mail, $telephone, $adresse, $password);
-                    header('Location: http://localhost/NeighborFood/controler/accueil/c_accueil.php');
-                }else{header('Location: http://localhost/NeighborFood/controler/inscription/c_inscription.php');}
+                    header('Location: /NeighborFood/controler/accueil/c_accueil.php');
+                }else{header('Location: /NeighborFood/controler/inscription/c_inscription.php');}
 			}
-		}else{ header('Location: http://localhost/NeighborFood/controler/inscription/c_inscription.php');}
-	}else{header('Location: http://localhost/NeighborFood/controler/inscription/c_inscription.php');}
+		}else{ header('Location: /NeighborFood/controler/inscription/c_inscription.php');}
+	}else{header('Location: /NeighborFood/controler/inscription/c_inscription.php');}
 	
 }else{
 	require "../../view/header/v_header.php";

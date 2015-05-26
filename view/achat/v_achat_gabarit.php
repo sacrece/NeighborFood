@@ -5,8 +5,8 @@
 	    poids = <?= $weight ?> kg<br/>
 	   <div id="description">
 	     description : <?= $description ?><br/>
-           <?php $GLOBALS[''.$n.'1'.'']=$idfruit;
-                    $GLOBALS[''.$n.'2'.'']=$idcategorie;?>
+           <?php $GLOBALS[''.$n.$pageCourrante.'1'.'']=$idfruit;
+                    $GLOBALS[''.$n.$pageCourrante.'2'.'']=$idcategorie;?>
            <form method="post" action="/NeighborFood/controler/achat/c_achat.php">
            <input type="submit" name="<?=$n?>" value="acheter" id="acheter">
            </form>

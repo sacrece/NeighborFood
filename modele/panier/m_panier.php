@@ -1,7 +1,7 @@
 <?php
-
+require_once "../../modele/connexionBdd/m_connexionBdd.php";
 function get_fruit($idmembre){
-    $bdd = new PDO('mysql:host=localhost;dbname=site internet;charset=utf8', 'root', '');
+    $bdd = connexion_bdd();
     $reponse = $bdd->query('SELECT DISTINCT fruitveg.quantity,
 											fruitveg.weight,
 											fruitveg.description,

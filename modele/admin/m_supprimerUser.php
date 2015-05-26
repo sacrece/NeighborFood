@@ -1,10 +1,11 @@
 <?php
 
+require_once "../../modele/connexionBdd/m_connexionBdd.php";
 
 if(isset($_GET['idmembre'])) {
     $idmembre = $_GET['idmembre'];
 
-    $bdd = new PDO('mysql:host=localhost;dbname=site internet;charset=utf8', 'root', '');
+    $bdd = connexion_bdd();
 
     $reponse = $bdd->query("SELECT *
                  FROM panier

@@ -1,7 +1,9 @@
-<?php 
+<?php
+
+require_once "../../modele/connexionBdd/m_connexionBdd.php";
 
 function get_fruit($premier, $parPage){
-	$bdd = new PDO('mysql:host=localhost;dbname=site internet;charset=utf8', 'root', '');
+    $bdd = connexion_bdd();
 	$reponse = $bdd->query('SELECT DISTINCT fruitveg.quantity, 
 											fruitveg.weight,
 											fruitveg.description,
@@ -27,7 +29,7 @@ function get_fruit($premier, $parPage){
 }
 
 function nbrFruit(){
-    $bdd = new PDO('mysql:host=localhost;dbname=site internet;charset=utf8', 'root', '');
+    $bdd = connexion_bdd();
     $reponse = $bdd->query('SELECT COUNT(idfruit) as nbrFruit FROM fruitveg WHERE fruitveg.sale_nosale = "1"');
     $nbrFruit = $reponse->fetch();
     return $nbrFruit['nbrFruit'];
@@ -35,7 +37,7 @@ function nbrFruit(){
 
 
 function get_fruit_categorie($premier, $parPage, $idcateg){
-	$bdd = new PDO('mysql:host=localhost;dbname=site internet;charset=utf8', 'root', '');
+    $bdd = connexion_bdd();
 	$reponse = $bdd->query('SELECT DISTINCT fruitveg.quantity, 
 											fruitveg.weight,
 											fruitveg.description,
@@ -61,7 +63,7 @@ function get_fruit_categorie($premier, $parPage, $idcateg){
 }
 
 function nbrFruitCategorie($idcateg){
-    $bdd = new PDO('mysql:host=localhost;dbname=site internet;charset=utf8', 'root', '');
+    $bdd = connexion_bdd();
     $reponse = $bdd->query('SELECT COUNT(idfruit) as nbrFruit
                                               FROM fruitveg INNER JOIN fruitvegcategory ON fruitveg.idcategorie = fruitvegcategory.idfruitvegcategorie
                                               WHERE fruitveg.sale_nosale = "1" AND fruitvegcategory.idfruitvegcategorie = "'.$idcateg.'" ');
@@ -71,7 +73,7 @@ function nbrFruitCategorie($idcateg){
 
 
 function insert_panier($idfruit, $idmembre, $idcategorie, $date){
-    $bdd = new PDO('mysql:host=localhost;dbname=site internet;charset=utf8', 'root', '');
+    $bdd = connexion_bdd();
     $bdd->exec("INSERT into panier VALUES('',
                                           '$date',
                                           '$idmembre',

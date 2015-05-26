@@ -1,12 +1,12 @@
 <?php
 // Connexion à la base de données
 
-
+require_once "../../modele/connexionBdd/m_connexionBdd.php";
 
 
 function test_mail($mail){
-	$bdd = new PDO('mysql:host=localhost;dbname=site internet;charset=utf8', 'root', '');
 
+    $bdd = connexion_bdd();
 	$reponse = $bdd->prepare('SELECT email FROM member where email=?');
 	$reponse->execute(array($mail));
 	$reponse1 = $reponse->fetch();
@@ -14,8 +14,8 @@ function test_mail($mail){
 }
 
 function insert($nom, $prenom, $mail, $telephone, $adresse, $password){
-	$bdd = new PDO('mysql:host=localhost;dbname=site internet;charset=utf8', 'root', '');
 
+        $bdd = connexion_bdd();
 		$bdd->exec("INSERT INTO member VALUES( '', '$nom', '$prenom', '$mail', '$telephone', '$adresse', '$password', '', '')");
 }
 		

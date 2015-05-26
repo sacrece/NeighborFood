@@ -1,6 +1,7 @@
-<?php 
+<?php
+require_once "../../modele/connexionBdd/m_connexionBdd.php";
 function get_info($mail){
-	$bdd = new PDO('mysql:host=localhost;dbname=site internet;charset=utf8', 'root', '');
+    $bdd = connexion_bdd();
 	$reponse = $bdd->prepare('SELECT name, first_name, email, phone, adresse, password
 								FROM member
 								WHERE email = ?')or die(print_r($bdd->errorInfo()));
@@ -11,7 +12,7 @@ function get_info($mail){
 
 
 function update($nom, $prenom, $mail, $telephone, $adresse, $ancmail){
-	$bdd = new PDO('mysql:host=localhost;dbname=site internet;charset=utf8', 'root', '');
+    $bdd = connexion_bdd();
 
 	$bdd->exec("UPDATE member SET name='".$nom."',
 								  first_name='".$prenom."',
@@ -22,7 +23,7 @@ function update($nom, $prenom, $mail, $telephone, $adresse, $ancmail){
 }
 
 function update_mdp($password, $mail){
-    $bdd = new PDO('mysql:host=localhost;dbname=site internet;charset=utf8', 'root', '');
+    $bdd = connexion_bdd();
     $bdd->exec("UPDATE member SET password='".$password."'
                                 WHERE email='".$mail."'");
 }

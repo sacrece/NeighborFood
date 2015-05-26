@@ -86,8 +86,8 @@
 
     if(isset($_POST['1'])){
         $date = date("Y-m-d H:m:s");
-        $idfruit = $GLOBALS['11'];
-        $idcategorie = $GLOBALS['12'];
+        $idfruit = $GLOBALS['1'.$pageCourrante.'1'];
+        $idcategorie = $GLOBALS['1'.$pageCourrante.'2'];
         $idmembre=$_SESSION['idmembre'];
         insert_panier($idfruit, $idmembre, $idcategorie, $date);
         $delai=1;
@@ -97,8 +97,8 @@
     }
      if(isset($_POST['2'])){
          $date = date("Y-m-d H:m:s");
-         $idfruit = $GLOBALS['21'];
-         $idcategorie = $GLOBALS['22'];
+         $idfruit = $GLOBALS['2'.$pageCourrante.'1'];
+         $idcategorie = $GLOBALS['2'.$pageCourrante.'2'];
          $idmembre=$_SESSION['idmembre'];
          insert_panier($idfruit, $idmembre, $idcategorie, $date);
          $delai=1;
@@ -107,8 +107,8 @@
     }
     if(isset($_POST['3'])){
         $date = date("Y-m-d H:m:s");
-        $idfruit = $GLOBALS['31'];
-        $idcategorie = $GLOBALS['32'];
+        $idfruit = $GLOBALS['3'.$pageCourrante.'1'];
+        $idcategorie = $GLOBALS['3'.$pageCourrante.'2'];
         $idmembre=$_SESSION['idmembre'];
         insert_panier($idfruit, $idmembre, $idcategorie, $date);
         $delai=1;

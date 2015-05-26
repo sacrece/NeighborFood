@@ -1,7 +1,8 @@
 <?php
-	
+
+require_once "../../modele/connexionBdd/m_connexionBdd.php";
 function get_password($mail){
-	$bdd = new PDO('mysql:host=localhost;dbname=site internet;charset=utf8', 'root', '');
+    $bdd = connexion_bdd();
 	
 	$reponse = $bdd->prepare('SELECT password FROM member WHERE email = ?');
 	$reponse->execute(array($mail));
@@ -11,7 +12,7 @@ function get_password($mail){
 }
 	
 function get_namefirstname($mail){
-		$bdd = new PDO('mysql:host=localhost;dbname=site internet;charset=utf8', 'root', '');
+    $bdd = connexion_bdd();
 		$reponse_nom = $bdd->prepare('SELECT name, first_name, idmembre FROM member WHERE email = ?');
 		$reponse_nom->execute(array($mail));
 		$name = $reponse_nom->fetch();
