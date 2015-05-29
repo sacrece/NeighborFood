@@ -3,6 +3,7 @@
 
 require "../../view/header/v_header.php";
 require "../../modele/admin/m_admin.php";
+require "../../view/menu/v_menuadmin.php";
 
 $func = getuser();
 require "../../view/admin/v_admin.php";

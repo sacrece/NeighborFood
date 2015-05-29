@@ -13,7 +13,7 @@
             <p>
             <h1>La communauté NeighborFood</h1>
             NeighborFood a pour vocation de créer une veritable communauté entre les membres inscrits du<br>
-            site. Nous proposant un forum, dans le quel les membres pourront posé des questions et participé<br>
+            site. Nous proposons un forum, dans lequel les membres pourront poser des questions et participer<br>
             a la vie du site
             </p>
         </div>

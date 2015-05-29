@@ -91,11 +91,10 @@
         $idcategorie = $GLOBALS['1'.$pageCourrante.'2'];
         $idmembre=$_SESSION['idmembre'];
         insert_panier($idfruit, $idmembre, $idcategorie, $date);
-
         $delai=1;
         $url="/NeighborFood/controler/achat/c_achat.php?p=$pageCourrante";
         header("Refresh: $delai;url=$url");
-        
+
 
     }
      if(isset($_POST['2'])){
@@ -105,7 +104,6 @@
          $idcategorie = $GLOBALS['2'.$pageCourrante.'2'];
          $idmembre=$_SESSION['idmembre'];
          insert_panier($idfruit, $idmembre, $idcategorie, $date);
-
          $delai=1;
          $url="/NeighborFood/controler/achat/c_achat.php?p=$pageCourrante";
          header("Refresh: $delai;url=$url");
@@ -119,7 +117,6 @@
         $idcategorie = $GLOBALS['3'.$pageCourrante.'2'];
         $idmembre=$_SESSION['idmembre'];
         insert_panier($idfruit, $idmembre, $idcategorie, $date);
-
         $delai=1;
         $url="/NeighborFood/controler/achat/c_achat.php?p=$pageCourrante";
         header("Refresh: $delai;url=$url");

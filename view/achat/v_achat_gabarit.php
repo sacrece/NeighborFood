@@ -9,7 +9,7 @@
                     $GLOBALS[''.$n.$pageCourrante.'2'.'']=$idcategorie;
                     ;?>
            <form method="post" action="/NeighborFood/controler/achat/c_achat.php?p=<?=$pageCourrante?>">
-           <input type="submit" name="<?=$n?>" value="acheter" id="acheter">
+           <input type="submit" name="<?=$n?>" value="Ajouter au panier" id="acheter">
            </form>
        </div>
 	    Prix = <?= $price ?> euros<br/>
