@@ -1,5 +1,5 @@
 <?php 
-session_start();
+
 
 require_once "../../modele/connexionBdd/m_connexionBdd.php";
 function get_idmembre($mail){
@@ -23,6 +23,6 @@ function get_idmembre($mail){
 											'1', 
 											'$buyorchange', 
 											'$idmembre', 
-											'$idcategorie')");
+											'$idcategorie')")or die(print_r($bdd->errorInfo()));
 	}
 ?>

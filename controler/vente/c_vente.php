@@ -14,7 +14,7 @@ if(isset($_POST['valider'])){
 	
 	require "../../modele/vente/m_vente.php";
 	$idmembre = get_idmembre($mail);
-	if($buyorchange==buy) {
+	if($buyorchange=='buy') {
         if (empty($quantite) || empty($poids) || empty($description) || empty($prix) || empty($buyorchange)) {
             header('Location : http://localhost/NeighboorFood/controler/vente/c_vente.php');
         } else {

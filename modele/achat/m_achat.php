@@ -18,7 +18,7 @@ function get_fruit($premier, $parPage){
 											fruitvegcategory.idfruitvegcategorie
 							FROM fruitveg INNER JOIN member ON fruitveg.member_idmembre = member.idmembre
 											INNER JOIN fruitvegcategory ON fruitveg.idcategorie = fruitvegcategory.idfruitvegcategorie
-                            WHERE fruitveg.sale_nosale = "1"
+                            WHERE fruitveg.sale_nosale = "1" AND member.idmembre != '.$_SESSION['idmembre'].'
 							ORDER BY idfruit DESC LIMIT '.$premier.','.$parPage.'
 							')
 	or die(print_r($bdd->errorInfo()));

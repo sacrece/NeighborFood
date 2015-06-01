@@ -10,6 +10,7 @@
 		 require "../../view/menu/v_menunonconnecte.php";
 		 require "../connexion/c_non_connecte.php";
 	}
+
 	require_once "../../view/achat/v_achat.php";
 	require_once "../../modele/achat/m_achat.php";
 	if (isset($_GET['valider'])){
