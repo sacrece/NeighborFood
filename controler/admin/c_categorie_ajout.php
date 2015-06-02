@@ -9,5 +9,6 @@ if(isset($_POST['valider'])){
 }else {
     require_once "../../view/admin/v_categorie_ajout.php";
 }
+require "../connexion/c_admin_connecte.php";
 require_once "../../view/footer/v_footer.php";
 ?>

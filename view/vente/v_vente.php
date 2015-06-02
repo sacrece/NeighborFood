@@ -19,7 +19,8 @@
 		<tr><td><label for="categorie">Choisissez votre catégorie</label><br />
 			<select name="categorie" id="categorie">
 		<?php
-			$bdd = new PDO('mysql:host=localhost;dbname=site internet;charset=utf8', 'root', '');
+        require_once "../../modele/connexionBdd/m_connexionBdd.php";
+        $bdd = connexion_bdd();
 			$reponse = $bdd->query('SELECT categories, idfruitvegcategorie FROM fruitvegcategory');			
 			
 			while ($donnees = $reponse->fetch()){

@@ -5,7 +5,8 @@
 </head>
 
 <?php
-$bdd = new PDO('mysql:host=localhost;dbname=site internet;charset=utf8', 'root', '');
+require_once "../../modele/connexionBdd/m_connexionBdd.php";
+$bdd = connexion_bdd();
 $reponse = $bdd->query('SELECT categories, idfruitvegcategorie FROM fruitvegcategory');
 echo ('<h2>Catégories</h2>');
 while ($donnees = $reponse->fetch()){

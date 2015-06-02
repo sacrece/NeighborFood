@@ -5,7 +5,7 @@ session_start();
 if(isset($_POST['valider'])){
 	htmlentities($quantite = $_POST['quantite']);
 	htmlentities($poids = $_POST['poids']);
-	htmlentities($description = $_POST['description']);
+	htmlentities($description = addslashes($_POST['description']));
 	htmlentities($prix = $_POST['prix']);
 	htmlentities($buyorchange = $_POST['buyorchange']);
 	$mail = $_SESSION['mail'];

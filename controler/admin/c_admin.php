@@ -19,6 +19,7 @@ require "../../view/admin/v_admin_finTableau.php";
 if(isset($_POST['1'])){
     echo ('yop');
 }
+require "../connexion/c_admin_connecte.php";
 require "../../view/footer/v_footer.php";
 
 

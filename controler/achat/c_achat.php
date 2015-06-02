@@ -18,11 +18,11 @@
         $nbrFruitCategorie = nbrFruitCategorie($idcateg);
         $nbrPageCategorie = ceil($nbrFruitCategorie/$parPage);
         if(isset($_GET['p']) && $_GET['p']>0 && $_GET['p']<=$nbrPageCategorie){
-            $pageCourranteCategorie = $_GET['p'];
+            $pageCourrante = $_GET['p'];
         }else{
-            $pageCourranteCategorie = 1;
+            $pageCourrante = 1;
         }
-		$func = get_fruit_categorie(($pageCourranteCategorie-1)*$parPage, $parPage, $idcateg);
+		$func = get_fruit_categorie(($pageCourrante-1)*$parPage, $parPage, $idcateg);
 		$n=1;
 		while($donnees = $func->fetch()){
 
@@ -40,7 +40,7 @@
             $n=$n+1;
 		}
         for($i=1; $i<=$nbrPageCategorie; $i++){
-            if($i==$pageCourranteCategorie){
+            if($i==$pageCourrante){
                 echo $i.'/ ';
             }else {
                 echo "<a href='/NeighborFood/controler/achat/c_achat.php?p=$i&categorie=$idcateg&valider=Valider'>$i</a>/ ";
@@ -92,9 +92,11 @@
         $idcategorie = $GLOBALS['1'.$pageCourrante.'2'];
         $idmembre=$_SESSION['idmembre'];
         insert_panier($idfruit, $idmembre, $idcategorie, $date);
-        $delai=1;
-        $url="/NeighborFood/controler/achat/c_achat.php?p=$pageCourrante";
-        header("Refresh: $delai;url=$url");
+        echo '<script language="Javascript">
+         <!--
+         document.location.replace("/NeighborFood/controler/achat/c_achat.php?p=$pageCourrante");
+         // -->
+         </script>';
 
 
     }
@@ -105,9 +107,12 @@
          $idcategorie = $GLOBALS['2'.$pageCourrante.'2'];
          $idmembre=$_SESSION['idmembre'];
          insert_panier($idfruit, $idmembre, $idcategorie, $date);
-         $delai=1;
-         $url="/NeighborFood/controler/achat/c_achat.php?p=$pageCourrante";
-         header("Refresh: $delai;url=$url");
+         echo '<script language="Javascript">
+         <!--
+         document.location.replace("/NeighborFood/controler/achat/c_achat.php?p=$pageCourrante");
+         // -->
+         </script>';
+
 
 
     }
@@ -118,9 +123,11 @@
         $idcategorie = $GLOBALS['3'.$pageCourrante.'2'];
         $idmembre=$_SESSION['idmembre'];
         insert_panier($idfruit, $idmembre, $idcategorie, $date);
-        $delai=1;
-        $url="/NeighborFood/controler/achat/c_achat.php?p=$pageCourrante";
-        header("Refresh: $delai;url=$url");
+        echo '<script language="Javascript">
+         <!--
+         document.location.replace("/NeighborFood/controler/achat/c_achat.php?p=$pageCourrante");
+         // -->
+         </script>';
 
 
      }

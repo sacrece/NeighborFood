@@ -16,10 +16,10 @@
 
     <table  id ="formulaire" >
         <tr><td><label for="nom">Nom : <input type="text" name="nom" id="nom" placeholder="Nom"/></label>*</tr></td>
-        <span class="tooltip" id="tooltipNomPrenom">Un nom doit contenir au moins 2 lettres</span>
+        <span class="tooltip" id="tooltipNomPrenom">Un nom doit contenir au moins 4 lettres</span>
 
         <tr><td><label for="prenom">Prénom</label> : <input type="text" name="prenom" id="prenom" placeholder="Prénom"/>*</tr></td>
-        <span class="tooltip" id="tooltipNomPrenom">Un nom doit contenir au moins 2 lettres</span>
+        <span class="tooltip" id="tooltipNomPrenom">Un nom doit contenir au moins 4 lettres</span>
 
         <tr><td><label for="mail">Adresse mail</label> : <input type="text" name="mail" id="mail" placeholder="adresse@email.com"/>*</tr></td>
         <span class="tooltip" id="tooltipMail">L'adresse mail n'est pas valide</span>

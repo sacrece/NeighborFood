@@ -14,7 +14,7 @@ function get_fruit($idmembre){
 							FROM fruitveg INNER JOIN panier ON fruitveg.idfruit = panier.fruitveg_idfruit
 											INNER JOIN fruitvegcategory ON fruitveg.idcategorie = fruitvegcategory.idfruitvegcategorie
                             WHERE panier.member_idmembre = '.$idmembre.'
-							ORDER BY idfruit DESC LIMIT 0,3
+							ORDER BY idfruit
 							')
     or die(print_r($bdd->errorInfo()));
 
