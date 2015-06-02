@@ -3,5 +3,5 @@
         <tr><td>Catégorie : <input type="text" name="categorie"></td></tr>
         <tr><td>Lien vers la photo : <input type="text" name="photo" value="/NeighborFood/view/image/images_fruits/"></td></tr>
     </table>
-        <input type="submit" value="valider" name="valider">
+    <input type="submit" class ="boutton" value="valider" name="valider">
 </form>
