@@ -22,6 +22,7 @@
         $price = $donnees['price'];
         $categories = $donnees['categories'];
         $photo = $donnees['photo'];
+        $idfruit = $donnees['idfruit'];
 
         require "../../view/panier/v_panier_gabarit.php";
     }

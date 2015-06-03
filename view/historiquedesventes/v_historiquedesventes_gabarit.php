@@ -4,14 +4,14 @@
     quantité = <?= $quantite ?><br/>
     poids = <?= $weight ?> kg<br/>
     <div id="description">
-        description : <?= $description ?><br/>
+        description : <?= $description ?><br/><br/>
+        Acheteur : <?=$acheteur_prenom?> <?=$acheteur_nom?><br/>
     </div>
     Prix = <?= $price ?> euros<br/>
     catégorie : <?= $categories ?><br/>
     <div id="image">
         <img src="<?= $photo ?>" alt="arobas" style="width:230px;" />
     </div>
-    <input type="button" id="delete" value="supprimer" onclick="supprimer(<?=$idfruit?>)">
-    <input type="button" id="buy" value="Acheter" onclick="acheter(<?=$idfruit?>)">
+
 
 </div>
