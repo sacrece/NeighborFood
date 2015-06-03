@@ -8,7 +8,7 @@
         		<nav>
         			<ul>
         				<li><a href="/NeighborFood/controler/accueil/c_accueil.php">Home</a></li>
-        				<li><a href="#">Forum</a> </li>
+        				<li><a href="/NeighborFood/controler/forum/index.php">Forum</a> </li>
         				<li><a href="/NeighborFood/controler/panier/c_panier.php">Mon panier</a> </li>
 						<li><a href="/NeighborFood/controler/monCompte/c_monCompte.php">Mon compte</a> </li>
         				<li><a href="/NeighborFood/controler/achat/c_achat.php">Acheter</a> </li>
