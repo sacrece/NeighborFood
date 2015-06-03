@@ -12,6 +12,7 @@
            <input type="submit" name="<?=$n?>" value="Ajouter au panier" id="acheter">
            </form>
            
+           <p><a href="/NeighborFood/controler/messagerie/ecrire.php">Envoyer un message</a></p>
        </div>
 	    Prix = <?= $price ?> euros<br/>
         Vendeur : <?=$first_name?> <?= $name?><br/>
