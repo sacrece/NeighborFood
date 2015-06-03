@@ -31,16 +31,19 @@ require "../../view/header/v_header.php";
         </h3>
         </p>
 
-    <article>
-        <table id="Retour">
-            <tr><td><li class="Aide"><a href="../../controler/aideEnLigne/c_accueilAide.php">Retour</a></li></td></tr>
-        </table>
-    </article>
-    <aside>
-        <table id="Suivant">
-            <tr><td><li class="Aide"><a href="../../view/aideEnLigne/faq8.php">Suivant</a></li></td></tr>
-        </table>
-    </aside>
+
+        <article>
+            <table id="Retour">
+                <a href="../../view/aideEnLigne/faq6.php"><img class="s1" src="arrow-left.png"/></a>
+            </table>
+        </article>
+
+        <aside>
+            <table id="Suivant">
+                <a href="../../view/aideEnLigne/faq8.php"><img class="s1" src="arrow-right.png"/></a>
+            </table>
+        </aside>
+
 </div>
 
 

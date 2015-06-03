@@ -10,12 +10,14 @@ body
 
 }
 
-#bloc_page{
+#bloc_page {
     width: 90%;
     margin: auto;
 }
 
-, h2
+
+
+h2
   {
       font-weight: normal;
   }
@@ -27,7 +29,7 @@ body
     border-radius: 3px;
     border: 4px solid #494848;
     right : 5px;
-    width : 100 % ;
+    width : 100% ;
 
 
 
