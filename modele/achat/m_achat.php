@@ -47,6 +47,7 @@ function get_fruit_categorie($premier, $parPage, $idcateg){
 											fruitveg.idfruit,
 											member.name,
 											member.first_name,
+											member.email,
 											fruitvegcategory.categories,
 											fruitvegcategory.photo,
 											fruitvegcategory.idfruitvegcategorie

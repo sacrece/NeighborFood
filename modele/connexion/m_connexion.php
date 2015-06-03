@@ -1,9 +1,7 @@
 <?php
-
 require_once "../../modele/connexionBdd/m_connexionBdd.php";
 function get_password($mail){
     $bdd = connexion_bdd();
-	
 	$reponse = $bdd->prepare('SELECT password FROM member WHERE email = ?');
 	$reponse->execute(array($mail));
 	$password = $reponse->fetch();

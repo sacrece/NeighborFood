@@ -32,6 +32,7 @@
 			$price = $donnees['price'];
 			$name = $donnees['name'];
 			$first_name = $donnees['first_name'];
+			$email_des= $donnees ['email'];
 			$categories = $donnees['categories'];
             $photo = $donnees['photo'];
             $idfruit = $donnees['idfruit'];

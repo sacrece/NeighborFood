@@ -11,6 +11,7 @@
            <form method="post" action="/NeighborFood/controler/achat/c_achat.php?p=<?=$pageCourrante?>">
            <input type="submit" name="<?=$n?>" value="Ajouter au panier" id="acheter">
            </form>
+           
        </div>
 	    Prix = <?= $price ?> euros<br/>
         Vendeur : <?=$first_name?> <?= $name?><br/>
