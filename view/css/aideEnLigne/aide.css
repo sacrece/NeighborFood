@@ -1,0 +1,153 @@
+#FAQ{
+    position: relative;
+    text-align: center;
+    width: 80%;
+    height: 70%;
+    margin-left: 10%;
+
+
+}
+
+
+
+li{
+    position: relative;
+    font-size: large;
+    list-style: none;
+    width: 100%;
+    height: 70%;
+    background-color: #c5c5c5;
+}
+a {
+    width: 80%;
+    margin-left: 10%;
+    height: 70%;
+    text-align: center;
+    display: block; /* Les disposent en bloc*/
+    border: 3px solid #c5c5c5;
+    border-radius: 3px;
+    text-decoration: none;
+    color: blue;
+}
+a:hover{
+    color: #000000;
+}
+
+h1, h3, h2{
+    color: white;
+}
+
+p{
+    color: white;
+    text-align: center;
+}
+
+
+
+#creer_compte{
+    width: 100%;
+    height: 50%;
+}
+
+
+
+#containerFaq{
+    width: 1000px;
+    height: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid #000000;
+    border-radius: 50px;
+    background-color: #5f8122;
+    margin-top: 100px;
+}
+
+
+
+
+
+nav {
+    float: left;
+    width: 60px;
+    height: 60px;
+    margin-top: 19px;
+    background-color: transparent;
+}
+#Home{
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    display: block;
+    margin-right: 10px;
+    list-style-image: none;
+    background-color: #c5c5c5;
+    padding-right: 6px;
+    border-radius: 3px;
+
+
+
+}
+
+.home1{
+    padding-right: 1px;
+    padding-top: 5px;
+
+
+}
+
+
+
+article{
+    float:left;
+    width: 100px;
+    background-color: transparent;
+    margin-top: 30px;
+    margin-right: 5px;
+    height: 100px;
+}
+
+#Retour a {
+    width: 80px;
+    height: 20px;
+    text-align: center;
+    display: inline-block;
+}
+#Retour li {
+    width: 100%;
+    height: 30px;
+    position: relative;
+    margin-right: 10px;
+    border: 3px solid white;
+    border-radius: 5px;
+    margin-top: 250px;
+}
+
+
+
+
+
+aside{
+    float: right;
+    width: 100px;
+    background-color: transparent;
+    height: 100px;
+    margin-top: 30px;
+    text-align: center;
+    margin-right: 10px;
+}
+#Suivant a {
+
+    width: 80px;
+    height: 20px;
+    text-align: center;
+    display: inline-block;
+}
+#Suivant li {
+    width: 100%;
+    height: 30px;
+    position: relative;
+    margin-right: 10px;
+    border: 3px solid white;
+    border-radius: 5px;
+    margin-top: 250px;
+}
