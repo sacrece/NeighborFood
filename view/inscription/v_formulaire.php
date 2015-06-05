@@ -37,9 +37,14 @@
 
     </table>
     <input type="reset" name="stop" value="Annuler" class="bouton"/>
-    <input type="submit" name="valider" value="Inscription" class="bouton"/>
+    <input type="submit" name="valider" value="Inscription" class="bouton" onclick="inscription()"/>
 
 
 </form>
 * champ obligatoire
 <script src="/NeighborFood/js/j_inscription.js"></script>
+<script>
+    function inscription(){
+        alert("Votre compte est bien enregistré")
+    }
+</script>

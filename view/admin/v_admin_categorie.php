@@ -18,4 +18,4 @@ while ($donnees = $reponse->fetch()){
 $reponse->closeCursor();
 ?>
 
-<a href="/NeighborFood/controler/admin/c_categorie_ajout.php">Ajouter une catégorie</a>
+<a href="/NeighborFood/controler/admin/c_categorie_ajout.php" id="lien">Ajouter une catégorie</a>

@@ -1,3 +1,9 @@
+<head>
+
+    <link rel="stylesheet" href="/NeighborFood/view/css/admin/admincategorie.css" />
+
+</head>
+
 <form id="categorie_ajout" method="post" action="/NeighborFood/controler/admin/c_categorie_ajout.php">
     <table>
         <tr><td>Catégorie : <input type="text" name="categorie"></td></tr>

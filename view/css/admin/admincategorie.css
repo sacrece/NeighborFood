@@ -4,6 +4,16 @@ table
     text-align: center;
 }
 
+#lien{
+    color: #ffffff;
+
+}
+
+.valider{
+    display: inline-block;
+
+}
+
 .bouton{-moz-box-shadow:inset 0px 0px 14px -3px #ffffff;
     -webkit-box-shadow:inset 0px 0px 14px -3px #ffffff;
     box-shadow:inset 0px 0px 14px -3px #ffffff;
