@@ -4,6 +4,7 @@
 </head>
 <body>
 
+
     <p>
         <h1> FAQ: Foire aux questions</h1>
         <h4>Bienvenue dans la FAQ. Vous trouverez les questions fréquemment posées afin de vous aider à profiter au mieux de notre site.

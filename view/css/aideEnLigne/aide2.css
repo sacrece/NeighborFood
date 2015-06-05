@@ -9,10 +9,7 @@
 }
 
 
-
-
-
-li{
+table li{
     position: relative;
     font-size: medium;
     list-style: none;
@@ -21,7 +18,7 @@ li{
     background-color: burlywood;
 
 }
-a {
+table a {
     width: 80%;
     margin-left: 10%;
     height: 70%;
@@ -35,7 +32,7 @@ a {
     font-weight: bold;
 
 }
-a:hover{
+table a:hover{
     color: #ffffff;
 }
 
