@@ -5,8 +5,6 @@
     border: 2px solid black;
     margin : 2% 2% 2% 2%;
     height : 180px;
-
-
 }
 
 
@@ -28,16 +26,21 @@
 
 #image{
     position : absolute;
-    top : 3%;
+    top : 1%;
     left : 10%;
 
 }
+.photo {
+    background-color:#fafbfc;
+    border:3px solid #b0b0b0;
+    margin:0 0 10px 10px;
+    padding:5px;
+    height: 160px;
 
+}
 
 #acheter
 {
     width : 25%;
     height : 20%;
-
-
 }

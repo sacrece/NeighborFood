@@ -1,10 +1,10 @@
 <div id="produit" >
 
 
-	    quantité = <?= $quantite ?><br/>
-	    poids = <?= $weight ?> kg<br/>
+	    Quantité = <?= $quantite ?><br/>
+	    Poids = <?= $weight ?> kg<br/>
 	   <div id="description">
-	     description : <?= $description ?><br/>
+	     Description : <?= $description ?><br/>
            <?php $GLOBALS[''.$n.$pageCourrante.'1'.'']=$idfruit;
                     $GLOBALS[''.$n.$pageCourrante.'2'.'']=$idcategorie;
                     ;?>
@@ -15,10 +15,10 @@
            <p><a href="/NeighborFood/controler/messagerie/ecrire.php">Envoyer un message</a></p>
        </div>
 	    Prix = <?= $price ?> euros<br/>
-        Vendeur : <?=$first_name?> <?= $name?><br/>
-        catégorie : <?= $categories ?><br/>
+        Catégorie : <?= $categories ?><br/><br/>
+        Vendeur : <a href="/NeighborFood/controler/profil/c_profil.php?mail=<?=$email_des?>"> <?=$first_name?> <?= $name?></a><br/>
 <div id="image">
-    <img src="<?= $photo ?>" alt="arobas" style="width:230px;" />
+    <img src="<?= $photo ?>" class="photo" alt="arobas" style="width:230px;" />
 </div>
 
 </div>

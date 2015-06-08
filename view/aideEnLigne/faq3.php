@@ -22,26 +22,32 @@ require "../../view/header/v_header.php";
 </nav>
 
 <div id="containerFaq">
-    <h1>Comment modifier ses coordonnées?</h1>
-    <h3><p> Pour modifier ses coordonnées, il faut suivre les étapes suivantes, à savoir: <br/>
-            -	... ;<br/>
-            -	... ;<br/>
-            -	...<br/>
-        <p> blah blah.</p></h3>
+    <h1>Comment modifier ses informations personnelles?</h1>
+    <h3><p> Pour modifier vos informations personnelles, vous devez: <br/>
+        <ul>
+            <li>Allez sur la page d'accueil et cliquez sur « mon compte » ;</li>
+            <li>Cliquez sur « modifier mes informations »</li>
+            <li>Effectuez les changements que vous désirez en vidant préalablement les champs; </li>
+            <li>Cliquez sur valider.</li>
+        </ul>
 
+        <p> Vos informations personnelles sont désormais à jour! ;)</p>
+        </p>
+    </h3>
 
-    </p>
 
     <article>
         <table id="Retour">
-            <tr><td><li class="Aide"><a href="../../view/aideEnLigne/faq2.php">Retour</a></li></td></tr>
+            <a href="../../view/aideEnLigne/faq2.php"><img class="s1" src="arrow-left.png"/></a>
         </table>
     </article>
+
     <aside>
         <table id="Suivant">
-            <tr><td><li class="Aide"><a href="../../view/aideEnLigne/faq4.php">Suivant</a></li></td></tr>
+            <a href="../../view/aideEnLigne/faq4.php"><img class="s1" src="arrow-right.png"/></a>
         </table>
     </aside>
+
 </div>
 
 

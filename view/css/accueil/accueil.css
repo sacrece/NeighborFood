@@ -3,9 +3,10 @@
 
 body
 {
-    background: url("/NeighborFood/view/image/Fondbois2.jpg");
+    background: url("/NeighborFood/view/image/Fondbois2.jpg") ;
     font-family: Courier;
     color: black;
+
 
 
 
@@ -39,18 +40,40 @@ h2
 
 
 
-h2
+.titre2
 {
     display: inline-block;
     width: 100%;
     list-style-type: none;
     text-align: center;
     margin:0 auto;
-    font-family: Georgia;
+    color: #666666;
+    font-family:Maiandra GD;
+    font-size: 300%;
 
 }
+.titre{
+    display: inline-block;
+    width: 100%;
+    list-style-type: none;
+    text-align: center;
+    margin:0 auto;
+    bottom: 150%;
+    color: #666666;
+    font-family:Maiandra GD;
+    font-size: 300%;
+}
+.logo{
+    width: 14%;
+    margin-top: -50px;
 
 
+}
+p{
+    margin-bottom: 100px;
+
+
+}
 
 
 /*section*/
@@ -58,9 +81,8 @@ h2
 section
 {
 
+    background-image: url("/NeighborFood/view/image/FondClair.jpg");
 
-    background: url("/NeighborFood/view/image/FondClair.jpg") ;
-    font-size: x-large;
     border: 2px solid #494848;
     text-align: center;
     margin-top:60px;

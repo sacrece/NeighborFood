@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="/NeighborFood/view/css/accueil/accueil.css" /> <!-- associe cette page au page css stylessheet-->
-    <title>NeihgborFood - ???????</title>
+    <title>NeighborFood - Bienvenu sur notre site</title>
 </head>
 
 

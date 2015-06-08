@@ -9,7 +9,7 @@
     Prix = <?= $price ?> euros<br/>
     catégorie : <?= $categories ?><br/>
     <div id="image">
-        <img src="<?= $photo ?>" alt="arobas" style="width:230px;" />
+        <img src="<?= $photo ?>" class="photo" alt="arobas" style="width:230px;" />
     </div>
     <input type="button" id="delete" value="supprimer" onclick="supprimer(<?=$idfruit?>)">
     <input type="button" id="buy" value="Acheter" onclick="acheter(<?=$idfruit?>)">

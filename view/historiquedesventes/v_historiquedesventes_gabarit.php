@@ -10,7 +10,7 @@
     Prix = <?= $price ?> euros<br/>
     catégorie : <?= $categories ?><br/>
     <div id="image">
-        <img src="<?= $photo ?>" alt="arobas" style="width:230px;" />
+        <img src="<?= $photo ?>" class="photo" alt="arobas" style="width:230px;" />
     </div>
 
 

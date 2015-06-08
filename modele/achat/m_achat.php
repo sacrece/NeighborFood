@@ -13,6 +13,7 @@ function get_fruit($premier, $parPage){
 											fruitveg.idfruit,
 											member.name,
 											member.first_name,
+											member.email,
 											fruitvegcategory.categories,
 											fruitvegcategory.photo,
 											fruitvegcategory.idfruitvegcategorie
@@ -30,7 +31,8 @@ function get_fruit($premier, $parPage){
 
 function nbrFruit(){
     $bdd = connexion_bdd();
-    $reponse = $bdd->query('SELECT COUNT(idfruit) as nbrFruit FROM fruitveg WHERE fruitveg.sale_nosale = "1"');
+    $reponse = $bdd->query('SELECT COUNT(idfruit) as nbrFruit FROM fruitveg INNER JOIN member ON fruitveg.member_idmembre = member.idmembre
+                              WHERE fruitveg.sale_nosale = "1" AND member.idmembre != '.$_SESSION['idmembre'].'')or die(print_r($bdd->errorInfo()));
     $nbrFruit = $reponse->fetch();
     return $nbrFruit['nbrFruit'];
 }
