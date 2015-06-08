@@ -23,6 +23,9 @@
         $categories = $donnees['categories'];
         $photo = $donnees['photo'];
         $idfruit = $donnees['idfruit'];
+        $name = $donnees['name'];
+        $first_name = $donnees['first_name'];
+        $mail= $donnees ['email'];
 
         require "../../view/panier/v_panier_gabarit.php";
     }

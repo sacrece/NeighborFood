@@ -7,7 +7,8 @@
         description : <?= $description ?><br/>
     </div>
     Prix = <?= $price ?> euros<br/>
-    catégorie : <?= $categories ?><br/>
+    catégorie : <?= $categories ?><br/><br/>
+    Vendeur : <a href="/NeighborFood/controler/profil/c_profil.php?mail=<?=$mail?>"> <?=$first_name?> <?= $name?></a><br/><br/><br/>
     <div id="image">
         <img src="<?= $photo ?>" class="photo" alt="arobas" style="width:230px;" />
     </div>
