@@ -22,12 +22,14 @@ require "../../view/header/v_header.php";
 </nav>
 
 <div id="containerFaq">
-    <h1>Comment gérer ses alertes?</h1>
-    <h3><p> Pour gérer ses alertes, il faut suivre les étapes suivantes, à savoir: <br/>
-            -	... ;<br/>
-            -	... ;<br/>
-            -	...<br/>
-        <p> blah blah.</p></h3>
+    <h1>Comment accéder aux coordonnées d’un vendeur?</h1>
+    <h3><p> Pour accéder aux coordonnées d’un vendeur, vous pouvez:
+            <ul>
+            <li>Soit cliquer sur le nom du vendeur depuis la page d'achat; </li>
+            <li>Soit y cliquer depuis le panier après avoir selectionné le produit;</li>
+            <li>Soit en tapant le nom du vendeur dans la barre de recherche se trouvant sur la page d'accueil, accessible en cliquant sur « Home » .</li>
+        </ul>
+        </h3>
 
 
     </p>

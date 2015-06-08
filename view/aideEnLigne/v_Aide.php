@@ -20,7 +20,7 @@
 
         <tr><td><li><a href="../../view/aideEnLigne/faq3.php">Comment modifier ses coordonnées?</a></li></td></tr>
 
-        <tr><td><li><a href="../../view/aideEnLigne/faq4.php"> Que faire lorsqu'on a oublié son mot de passe?</a></li></td></tr>
+        <tr><td><li><a href="../../view/aideEnLigne/faq4.php"> Comment discuter sur le forum?</a></li></td></tr>
 
         <tr><td><li><a href="../../view/aideEnLigne/faq5.php"> Comment ajouter un produit?</a></li></td></tr>
 
@@ -28,7 +28,7 @@
 
         <tr><td><li><a href="../../view/aideEnLigne/faq7.php"> Comment modifier les caractéristiques d'un produit?</a></li></td></tr>
 
-        <tr><td><li><a href="../../view/aideEnLigne/faq8.php"> Comment gérer ses alertes?</a></li></td></tr>
+        <tr><td><li><a href="../../view/aideEnLigne/faq8.php"> Comment accéder aux coordonnées d'un vendeur?</a></li></td></tr>
     </table>
 
 </body>

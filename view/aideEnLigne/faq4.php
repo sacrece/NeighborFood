@@ -22,12 +22,18 @@ require "../../view/header/v_header.php";
 </nav>
 
 <div id="containerFaq">
-    <h1>Que faire lorsqu'on a oublié son mot de passe?</h1>
-    <h3><p> Lorsqu'on a oublié son mot de passe, il faut suivre les étapes suivantes, à savoir: <br/>
-            -	... ;<br/>
-            -	... ;<br/>
-            -	...<br/>
-        <p> blah blah.</p></h3>
+    <h1>Comment discuter sur le forum?</h1>
+    <h3><p> Pour discuter sur le forum, il faut préalablement être connecté, puis:
+        <ul>
+            <li>Cliquez sur « Forum » ;</li>
+            <li>Ensuite, Sélectionnez un sujet de discussion ;</li>
+            <li>Lorsque cela est fait, cliquez sur « ajouter un sujet » ;</li>
+            <li>Dans chacun des champs reservé écrivez-y le titre de votre sujet et votre commentaire ;</li>
+            <li>Lorsque tous les champs sont complets, cliquez sur « Ajouter » pour confirmer l'ajout de votre sujet.</li>
+
+        </ul>
+        <p>Vous verrez alors votre commentaire posté sur le forum. Vous pourrez également en ajouter d'autres via le champ reservé.</p>
+        </h3>
 
 
     </p>

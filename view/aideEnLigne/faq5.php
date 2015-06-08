@@ -23,11 +23,15 @@ require "../../view/header/v_header.php";
 
 <div id="containerFaq">
     <h1>Comment ajouter un produit?</h1>
-    <h3><p> Pour ajouter un produit, il faut suivre les étapes suivantes, à savoir: <br/>
-            -	... ;<br/>
-            -	... ;<br/>
-            -	...<br/>
-        <p> blah blah.</p></h3>
+    <h3><p> Pour ajouter un produit, destiné à la vente: <br/>
+        <ul>
+            <li>Vous devez cliquer sur « vendre »;</li>
+            <li>Puis rentrez les informatons demandées dans les champs correspondants;</li>
+            <li>Choisissez la catégorie correspondant au produit que vous voulez ajouter et ensuite validez;</li>
+            <li>Vous serez redirigé sur la page d'accueil.</li>
+
+        </ul>
+        <p>Tout autre utilisateur qui souhaiterait acheter des produits de la même catégorie que le vôtre, se les verra proposés et pourra les acheter.</p></h3>
 
 
     </p>

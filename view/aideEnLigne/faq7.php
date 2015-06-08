@@ -23,11 +23,11 @@ require "../../view/header/v_header.php";
 
     <div id="containerFaq">
         <h1>Comment modifier les caractéristiques d'un produit?</h1>
-        <h3><p> Pour modifier les caractéristiques d'un produit, il faut suivre les étapes suivantes, à savoir: <br/>
-            -	... ;<br/>
-            -	... ;<br/>
-            -	...<br/>
-            <p> blah blah.</p>
+        <h3><p> Pour modifier les caractéristiques d'un produit, il faudrait: <br/>
+           <ul>
+                <li>D'abord le faire retirer soit en le vendant ou en demandant à l'administrateur de le faire;</li>
+                <li>Dès lors, vous pouvez le remettre en effectuant les modifications que vous souhaitez.</li>
+            </ul>
         </h3>
         </p>
 

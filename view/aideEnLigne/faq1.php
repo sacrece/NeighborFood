@@ -27,8 +27,8 @@ require "../../view/header/v_header.php";
             <li>Tout d'abord, allez à la page d’accueil, puis cliquez sur « Créer compte » ;</li>
             <li>Ensuite, complétez le formulaire en respectant les modèles entrevus dans les différents champs ;</li>
             <li>Lorsque tous les champs sont complets, cliquez sur « Inscription » pour confirmer la création de votre compte.</li>
-        </ul><br/>
-        Vous serez alors redirigé vers la page d’accueil.
+        </ul>
+       <p> Vous serez alors redirigé vers la page d’accueil.</p>
         </p>
     </h3>
 

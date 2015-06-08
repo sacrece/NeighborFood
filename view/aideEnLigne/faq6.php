@@ -22,12 +22,13 @@ require "../../view/header/v_header.php";
 </nav>
 
 <div id="containerFaq">
-    <h1>Comment supprimer un produit?</h1>
-    <h3><p> Pour supprimer un produit, il faut suivre les étapes suivantes, à savoir: <br/>
-            -	... ;<br/>
-            -	... ;<br/>
-            -	...<br/>
-        <p> blah blah.</p></h3>
+    <h1>Comment rétirer un produit?</h1>
+    <h3><p> Pour retirer un produit, il faudrait: <br/>
+           <ul>
+            <li>Soit le vendre, dans ce cas il sera automatiquement retiré de la liste des produits qu'il est possible d'acheter;</li>
+            <li>Soit envoyer un message à l'administrateur via le forum ou par mail.</li>
+        </ul>
+        </h3>
 
 
     </p>

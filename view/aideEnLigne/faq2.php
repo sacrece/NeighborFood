@@ -29,7 +29,7 @@ require "../../view/header/v_header.php";
             <li>    Puis entrez votre adresse mail dans le champ qui lui est réservé ;</li>
             <li>	Entrez également votre mot de passe;</li>
             <li>  Cliquez ensuite sur « se connecter » .</li>
-        </ul><br/>
+        </ul>
         <p>Vous serez alors redirigé sur la page d'accueil sur laquelle vous pourrez remarquer votre nom affiché ainsi que plusieurs fonctionnalités en plus.</p>
         </p>
     </h3>
