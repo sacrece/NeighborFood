@@ -4,7 +4,7 @@ require_once "../../modele/connexionBdd/m_connexionBdd.php";
 //fonction qui va recuperer les messages
 function recup_message()
 {
-
+    $mail=$_SESSION['mail'];
     $bdd = connexion_bdd();
     $message=array();
     $reponse = $bdd->query("
@@ -12,7 +12,7 @@ function recup_message()
            texte_message
            FROM conversations_messages
            INNER JOIN conversations_membres ON conversations_messages.id_conversations=conversations_membres.id_conversations
-           WHERE conversations_membres.pseudo_des='{$_SESSION['mail']}'
+           WHERE conversations_membres.pseudo_des='".$mail."'
            ORDER BY conversations_messages.date_message DESC
         ")or die(print_r($bdd->errorInfo()));
 

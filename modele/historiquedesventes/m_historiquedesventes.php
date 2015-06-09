@@ -12,7 +12,8 @@ function get_fruit($idmembre){
 											fruitvegcategory.photo,
 											fruitvegcategory.idfruitvegcategorie,
 											member.name,
-											member.first_name
+											member.first_name,
+											member.email
 							FROM fruitveg INNER JOIN historiquedesventes ON fruitveg.idfruit = historiquedesventes.fruitveg_idfruit
 											INNER JOIN fruitvegcategory ON fruitveg.idcategorie = fruitvegcategory.idfruitvegcategorie
 											INNER JOIN member ON historiquedesventes.member_idmembre = member.idmembre

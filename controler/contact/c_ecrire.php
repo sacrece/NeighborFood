@@ -16,7 +16,7 @@ if(isset($_GET['emaildesti']) &&!empty($_GET['emaildesti']))
 	if(isset($_POST['submit']))
 	{
 
-		$message=$_POST['message'];
+		$message=addslashes($_POST['message']);
 
 			// si le champs message est vide 
 			if(!empty($message))

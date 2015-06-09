@@ -7,7 +7,7 @@ $bdd = connexion_bdd();
 require "../../view/header/v_header.php";
 if(isset($_SESSION['connecte'])){
     require "../../view/menu/v_menuconnecte.php";
-    require "../connexion/c_connecte.php";
+
 
 }else{
     require "../../view/menu/v_menunonconnecte.php";

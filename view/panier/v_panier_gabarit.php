@@ -5,6 +5,7 @@
     poids = <?= $weight ?> kg<br/>
     <div id="description">
         description : <?= $description ?><br/>
+        <p> <a href="/NeighborFood/controler/messagerie/c_ecrire.php?emaildesti=<?=$mail?>">Envoyer un message</a></p>
     </div>
     Prix = <?= $price ?> euros<br/>
     catégorie : <?= $categories ?><br/><br/>

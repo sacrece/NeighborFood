@@ -25,7 +25,8 @@
         $recherche = recherche($_POST['recherche']);
 
         while($info = $recherche->fetch()) {
-            echo '<div id="membre"> '.$info['name'] . '<br/>' . $info['first_name'] .'<br><a href="/NeighborFood/controler/profil/c_profil.php?mail='.$info['email'].'">'.$info['email']. '</div>';
+            echo '<div id="membre"> '.$info['name'] . '<br/>' . $info['first_name'] .'<br><a href="/NeighborFood/controler/profil/c_profil.php?mail='.$info['email'].'">'.$info['email']. '
+            <br/><p> <a href="/NeighborFood/controler/messagerie/c_ecrire.php?emaildesti='.$info['email'].'">Envoyer un message</a></p></div>';
         }
         require_once "../../view/footer/v_footer.php";
     }else{

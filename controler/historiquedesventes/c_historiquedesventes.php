@@ -25,6 +25,7 @@ while($donnees = $func->fetch()){
     $idfruit = $donnees['idfruit'];
     $acheteur_nom = $donnees['name'];
     $acheteur_prenom = $donnees['first_name'];
+    $mail = $donnees['email'];
 
     require "../../view/historiquedesventes/v_historiquedesventes_gabarit.php";
 }
