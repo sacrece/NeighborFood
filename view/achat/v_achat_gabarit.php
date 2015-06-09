@@ -12,7 +12,7 @@
            <input type="submit" name="<?=$n?>" value="Ajouter au panier" id="acheter">
            </form>
            
-           <p><a href="/NeighborFood/controler/messagerie/ecrire.php">Envoyer un message</a></p>
+           <p> <a href="/NeighborFood/controler/messagerie/c_ecrire.php?emaildesti=<?=$email_des?>">Envoyer un message</a></p>
        </div>
 	    Prix = <?= $price ?> euros<br/>
         Catégorie : <?= $categories ?><br/><br/>

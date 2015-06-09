@@ -14,6 +14,7 @@
         				<li><a href="/NeighborFood/controler/achat/c_achat.php">Acheter</a> </li>
 						<li><a href="/NeighborFood/controler/vente/c_vente.php">Vendre</a></li>
 						<li><a href="/NeighborFood/controler/historiquedesventes/c_historiquedesventes.php">Historique de vente</a> </li>
+                        <li><a href="/NeighborFood/controler/messagerie/c_lire.php">Boite de réception</a></li>
         			</ul>
         		</nav>
         	</div>
